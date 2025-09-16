@@ -24,15 +24,34 @@ I added a **backend** with Node.js and MySQL, integrated EJS templating, and mad
 
 ---
 
-## Start the Application
+## Setup Instructions
 
-```bash
-# Install dependencies
-npm install
+1. **Backend Setup (Node.js + MySQL)**
 
-# Start the application
-npm start
+   - Navigate to the Node.js folder:
 
-# Open in your browser
-# Navigate to http://localhost:3000
-```
+     ```bash
+     cd backend-todo-app
+     ```
+
+   - Install dependencies:
+
+     ```bash
+     npm install
+     ```
+
+   - Configure the database:
+
+     - Open `util/database.js`
+     - Update your MySQL server credentials (`host`, `user`, `password`, `database`)
+
+   - Start the backend server:
+
+     ```bash
+     npm start
+     ```
+
+   - Open the browser at `http://localhost:3000/`
+
+     
+
