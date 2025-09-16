@@ -1,6 +1,6 @@
 # Fullstack Todo App
 
-This is a fullstack Todo application built with **Node.js, express.js MySQL, EJS, HTML, CSS, and JavaScript**.  
+This is a fullstack Todo application built with **Node.js, Express.js, MySQL, EJS, HTML, CSS, and JavaScript**.  
 The original front-end is based on a tutorial by [Coding2Go](https://www.youtube.com/watch?v=THEKW1gITJI&t=2115s).  
 I added a **backend** with Node.js and MySQL, integrated EJS templating, and made minor CSS improvements.
 
