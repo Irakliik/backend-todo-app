@@ -75,6 +75,10 @@ form {
   padding: 0 16px;
   background-color: var(--primary-color);
   border-radius: 15px;
+  list-style: none;
+}
+
+.todo__form {
   display: flex;
   align-items: center;
 }

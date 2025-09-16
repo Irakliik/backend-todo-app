@@ -40,6 +40,25 @@ app.post("/delete-todo/:id", async (req, res) => {
   res.redirect("/");
 });
 
+app.post("/update-todo/:id", async (req, res) => {
+  const id = req.params.id;
+  const [[{ completed }]] = await db.execute(
+    "SELECT completed FROM todos WHERE id = ?",
+    [id]
+  );
+
+  if (completed) {
+    await db.execute("UPDATE todos SET completed = ? WHERE id = ?", [
+      false,
+      id,
+    ]);
+  } else {
+    await db.execute("UPDATE todos SET completed = ? WHERE id = ?", [true, id]);
+  }
+
+  res.redirect("/");
+});
+
 initDB()
   .then(() => {
     app.listen(3000, () => {
